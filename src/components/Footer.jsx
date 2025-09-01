@@ -1,14 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom'
+import '../css/Footer.css';
+
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto text-center">
-                <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
-                <p>Follow us on
-                    <a href="https://twitter.com" className="text-blue-400 hover:underline ml-1">Twitter</a>,
-                    <a href="https://facebook.com" className="text-blue-400 hover:underline ml-1">Facebook</a>,
-                    <a href="https://instagram.com" className="text-blue-400 hover:underline ml-1">Instagram</a>
-                </p>
-            </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><Link to="/Parcours">Parcours</Link></li>
+                    <li><Link to="/Projets">Projets</Link></li>
+                </ul>
+            </nav>
+            <p><Link to="/">UN JOLI LOGO</Link></p>
+            <nav>
+                <ul>
+                    <li><Link to="/Curriculum">Curriculum</Link></li>
+                    <li><Link to="/Contact">Contact</Link></li>
+                </ul>
+            </nav>
         </footer>
     );
 }
