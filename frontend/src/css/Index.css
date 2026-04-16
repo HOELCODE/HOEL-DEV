@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Bangers&family=Bungee&family=Luckiest+Guy&family=Permanent+Marker&family=Press+Start+2P&family=Rock+Salt&display=swap');
+
+* {
+    font-family: "Bungee", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: auto 0;
+    background-color: #111;
+}
+
+.shape {
+    padding: 70px 70px;
+}

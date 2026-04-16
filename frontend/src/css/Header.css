@@ -1,0 +1,43 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: #121212;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Header hover effects */
+li:hover {
+    transform:  scale(1.3);
+}
+
+li {
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    color: #20c997;
+}
+
+
+
+
+
+
