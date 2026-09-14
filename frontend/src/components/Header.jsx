@@ -8,10 +8,7 @@ const Header = () => {
             <p><Link to="/">UN JOLI LOGO</Link></p>
             <nav>
                 <ul>
-                    <li><Link to="/Parcours">Parcours</Link></li>
-                    <li><Link to="/Projets">Projets</Link></li>
-                    <li><Link to="/Calendrier">Calendrier</Link></li>
-                    <li><Link to="/Contact">Contact</Link></li>
+                    <li><Link to="/create">Create Employee</Link></li>
                 </ul>
             </nav>
         </header>

@@ -1,12 +1,45 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { createBrowserRouter, BrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+import router from "./component/Record";
+import RecordList from "./components/RecordList";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <RecordList />
+      },
+    ],
+  },
+  {
+    path: "/edit/:id",
+    element: <App />,
+    children: [
+      {
+        path: "/edit/:id",
+        element: <Record />
+      },
+    ],
+  },
+  {
+    path: "/create",
+    element: <App />,
+    children: [
+      {
+        path: "/create",
+        element: <Record />
+      },
+    ],
+  },
+])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
