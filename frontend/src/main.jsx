@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, BrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import router from "./component/Record";
+import Record from "./components/Record";
 import RecordList from "./components/RecordList";
 
 const router = createBrowserRouter([

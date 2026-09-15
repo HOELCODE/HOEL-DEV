@@ -1,5 +1,4 @@
 import React from 'react';
-import AppRouter from './routes/Router.jsx';
 
 // Components
 import Header from './components/Header.jsx';
@@ -10,15 +9,14 @@ import Shape from './components/Shape.jsx';
 const App = () => {
 
   return (
-    <>
+    <div>
 
       <Header />
       <Shape>
-        <AppRouter />
       </Shape>
       <Footer />
 
-    </>
+    </div>
   )
 }
 
